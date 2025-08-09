@@ -41,6 +41,8 @@ const Navbar = () => {
             <li className='text-primary dark:text-white'><NavLink to="/">Home</NavLink></li>
             <li className='text-primary dark:text-white'><NavLink to="/allArtifacts">All Artifacts</NavLink></li>
             <li className='text-primary dark:text-white'><NavLink to="/addArtifacts">Add Artifacts</NavLink></li>
+            <li className='text-primary dark:text-white'><NavLink to="/addArtifacts">About Us</NavLink></li>
+            <li className='text-primary dark:text-white'><NavLink to="/addArtifacts">Contact Us</NavLink></li>
         </>
     )
     return (
