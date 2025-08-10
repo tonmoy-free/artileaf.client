@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 
 const AboutUs = () => {
@@ -54,12 +55,9 @@ const AboutUs = () => {
 
                 {/* Call to Action */}
                 <div className="mt-10">
-                    <a
-                        href="/explore"
-                        className="px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-all duration-300"
-                    >
-                        Explore Artifacts
-                    </a>
+                    <Link to={`/artifactDetails`}>
+                        <button className="px-6 py-5 btn btn-outline btn-primary hover:bg-secondary hover:border-secondary dark:text-white dark:border-white rounded-lg">Explore Artifacts</button>
+                    </Link>
                 </div>
             </div>
         </section>
