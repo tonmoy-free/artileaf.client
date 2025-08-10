@@ -44,10 +44,10 @@ const FeaturedArtifacts = ({ artifactsData }) => {
 
     return (
         <div className='w-11/12 mx-auto md:px-0 px-2'>
-            <div className='mt-18 lg:mt-20 md:mt-20'>
-                <h1 className='text-center text-2xl md:text-5xl font-bold text-primary mb-4 dark:text-secondary'>Featured Artifacts</h1>
-                <p className='text-center px-6 md:px-0 text-xs md:text-base font-normal text-gray-600 mb-8 dark:text-white'>
-                    Based on your likes, here are the top historical <br /> wonders that stand out for their story, mystery, and beauty.
+            <div className=''>
+                <h1 className='text-center text-2xl md:text-5xl font-bold text-primary mb-2 dark:text-secondary'>About Us</h1>
+                <p className='text-center px-6 md:px-0 text-xs md:text-base font-normal text-gray-600 mb-4 dark:text-white'>
+                    Connecting People Through History
                 </p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2px]'>
