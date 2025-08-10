@@ -41,11 +41,12 @@ const AllArtifacts = ({ pageTitle }) => {
                         name='search'
                         placeholder='Search By Artifact Name'
                         onChange={(e) => setSearch(e.target.value)}
-                        className="w-full md:w-6/12 px-4 py-2 border border-gray-300 rounded-md dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm"
+                        className="w-full md:w-6/12 px-4 py-2 border border-gray-300 rounded-md  dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm"
                     />
                     <select
                         onChange={(e) => setSortOrder(e.target.value)}
-                        className="px-4 py-2 border border-gray-300 rounded-md dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm"
+                        className="px-4 py-2 border border-gray-300 rounded-md dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm
+                        dark:bg-black"
                     >
                         <option value="">Sort by Likes</option>
                         <option value="asc">Ascending Likes</option>
