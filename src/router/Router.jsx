@@ -20,6 +20,7 @@ import UpdateMyArtifact from "../pages/MyArtifactsRoute/UpdateMyArtifact";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Loading from "../components/Loading/Loading";
 import AboutUs from "../pages/AddArtifacts/AboutUs/AboutUs";
+import ContactUs from "../pages/ContactUs/ContactUs";
 
 export const router = createBrowserRouter([
     {
@@ -75,6 +76,10 @@ export const router = createBrowserRouter([
             {
                 path: '/about-us',
                 element: <AboutUs></AboutUs>
+            },
+            {
+                path: '/contact-us',
+                element: <ContactUs></ContactUs>
             }
         ]
     },
