@@ -55,7 +55,7 @@ const AboutUs = () => {
 
                 {/* Call to Action */}
                 <div className="mt-10">
-                    <Link to={`/artifactDetails`}>
+                    <Link to={`/allArtifacts`}>
                         <button className="px-6 py-5 btn btn-outline btn-primary hover:bg-secondary hover:border-secondary dark:text-white dark:border-white rounded-lg">Explore Artifacts</button>
                     </Link>
                 </div>
