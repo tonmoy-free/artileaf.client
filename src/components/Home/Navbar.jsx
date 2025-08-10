@@ -39,8 +39,14 @@ const Navbar = () => {
     const link = (
         <>
             <li className='text-primary dark:text-white'><NavLink to="/">Home</NavLink></li>
-            <li className='text-primary dark:text-white'><NavLink to="/allArtifacts">All Artifacts</NavLink></li>
-            <li className='text-primary dark:text-white'><NavLink to="/addArtifacts">Add Artifacts</NavLink></li>
+            {
+                user?.email ? <>
+                    <li className='text-primary dark:text-white'><NavLink to="/allArtifacts">All Artifacts</NavLink></li>
+                    <li className='text-primary dark:text-white'><NavLink to="/addArtifacts">Add Artifacts</NavLink></li>
+                    <li className='text-primary dark:text-white'><NavLink to="/myArtifactsRoute">My Artifacts</NavLink></li>
+                </> : ""
+            }
+
             <li className='text-primary dark:text-white'><NavLink to="/about-us">About Us</NavLink></li>
             <li className='text-primary dark:text-white'><NavLink to="/contact-us">Contact Us</NavLink></li>
         </>
@@ -63,9 +69,9 @@ const Navbar = () => {
                         <div>
                             {
                                 isDark ?
-                                    <Link to="/"><img className='md:w-50 w-30' src={artiLeafBlack} alt=""  /></Link>
+                                    <Link to="/"><img className='md:w-50 w-30' src={artiLeafBlack} alt="" /></Link>
                                     :
-                                    <Link to="/"><img className='md:w-50 w-30' src={artiLeafBlue} alt=""  /></Link>
+                                    <Link to="/"><img className='md:w-50 w-30' src={artiLeafBlue} alt="" /></Link>
                             }
                         </div>
                     </div>
